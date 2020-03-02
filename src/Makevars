@@ -1,0 +1,10 @@
+lib-files = lib/code2.c
+
+all: $(SHLIB)
+
+$(SHLIB): lib.o
+
+lib.c: $(lib-files)
+	touch lib.c
+
+.PHONY: all
